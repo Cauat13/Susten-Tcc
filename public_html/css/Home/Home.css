@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 500px) {
+
+    html{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+    }
+    body{
+        font-family: 'Inter', sans-serif;
+        max-width: 500px;
+        box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.30);
+        padding-bottom: 20px;
+    }
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.banner{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .banner img{
+        width: 90%;
+    }
+    .banner h1{
+        position: absolute;
+        top: 20%;
+        color: white;
+
+        font-size: calc(1.8em + 1vh);
+    }
+
+.search{
+    width: 80%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .search input{
+        width: 88%;
+        height: 100%;
+        padding-left: 12%;
+        
+        border-radius: 3px;
+        background: #E9E9E9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .search input::placeholder{
+        font-weight: 700;
+        font-size: 15px;
+        color: rgb(161, 161, 161);
+    }
+    .search img{
+        position: absolute;
+
+        width: 25px;
+        height: 25px;
+        left: 5px;
+    }
+
+nav{
+    height: auto;
+
+    padding: 7px 0 7px 0;
+
+    margin: 25px 0 10px 0;
+
+    background: #f4f4f4;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25);
+}
+    nav h1{
+        padding-left: 10%;
+    }
+    nav button{
+        background: #E9E9E9;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+        border: none;
+
+        padding: 12px;
+        border-radius: 100px;
+    }
+    nav button img{
+        width: 35px;
+    }
+.menu{
+    width: 90%;
+    margin: 10px 15px 10px 15px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#category{
+    font-size: 15px;
+    padding-left: 30px;
+}
+.titulo{
+    width: 80%;
+    font-size: 15px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+    .item p{
+        font-weight: 600;
+    }
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+main img{
+    width: 90%;
+    margin: 0 auto;
+}
+#disponiveis{
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
