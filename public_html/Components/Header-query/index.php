@@ -40,3 +40,6 @@ if(isset($_SESSION['Category'])){
     </div>
     <img src="../../Imgs/icons/Novidades.svg" alt="novidades" id="notify">
 </header>
+<?php
+        include "../../Components/Notify/index.php"
+    ?>

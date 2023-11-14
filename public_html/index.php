@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="Css/Header/Header-Home.css">
     <link rel="stylesheet" href="Css/Home/Home.css">
     <link rel="stylesheet" href="Css/Popup/Popup.css">
+    <link rel="stylesheet" href="Css/ajax/ajax.css">
 
     <!--linkando a font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>Susten lanches e bebidas do 3 T.A</title>
 </head>
 <body>
@@ -28,10 +30,14 @@
     </div>
 
     <form action="Pages/Results" method="get" class="search">
-        <input type="text" name="pesquisa"  placeholder="Encontre o seu favorito" autocomplete="off">
+        <input type="text" name="pesquisa" id="search" placeholder="Encontre o seu favorito" autocomplete="off">
         <img src="Imgs/icons/search.svg" alt="busca">
     </form>
 
+    <div class="ajax">
+        <ul id="search-results">
+        </ul>
+    </div>
     <nav>
         <div class="title" id="Category">
             <h1>Categorias</h1>
@@ -59,11 +65,13 @@
         <div class="titulo">
             <h1>Disponiveis</h1>
         </div>
-        <img src="" alt="" id="disponiveis">
+        <img src="imgs/Products/BoloBanana.png" alt="" id="disponiveis">
     </main>
     <?php
         include "Components/Notify/index.php"
     ?>
     <script src="js/popup.js"></script>
+    <script src="js/search.js"></script>
+
 </body>
 </html>

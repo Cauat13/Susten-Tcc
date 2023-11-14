@@ -1,8 +1,8 @@
 <?php
     $host = "localhost";
-    $user = "id21416469_sustenadm";
-    $pass = "Ct24052005**";
-    $name_db = "id21416469_suten";
+    $user = "root";
+    $pass = "";
+    $name_db = "susten-tcc";
 
     $conn = new mysqli($host, $user, $pass, $name_db); 
 ?>
